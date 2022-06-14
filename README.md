@@ -1,19 +1,34 @@
-# jpx-tokyo-stock-exchange-prediction
+## JPX Tokyo Stock Exchange Prediction Challenge
 
+### 1. Run locally
 
-## 1. Run locally
-
-Download the Dataset using the kaggle API.
+**1.1 Download the Dataset using the kaggle API**
 
 To install the Kaggle API:
 
-pip install kaggle
+*pip install kaggle*
 
-More about the Kaggle API in https://github.com/Kaggle/kaggle-api
+More about the Kaggle API in https://github.com/Kaggle/kaggle-api.
 
-To download the dataset to your local machine
+**1.2 Command to download the dataset to your local machine**
 
-kaggle competitions download -c jpx-tokyo-stock-exchange-prediction
+*kaggle competitions download -c jpx-tokyo-stock-exchange-prediction*
+
+**1.3 Install Requirements**
+
+*pip install -r requirements.txt*
+
+**1.4 Select Local Datasets**
 
 
-## 2. Run in Kaggle
+
+### 2. Run in Kaggle
+
+
+**2.1 Clone this repository**
+
+*git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.git*
+
+
+https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository
+**
