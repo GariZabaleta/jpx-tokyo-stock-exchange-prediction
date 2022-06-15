@@ -1,5 +1,15 @@
 ## JPX Tokyo Stock Exchange Prediction Challenge
 
+[jpx-tokyo-stock-exchange challenge](https://www.kaggle.com/competitions/jpx-tokyo-stock-exchange-prediction)
+
+## Description
+Capstone project Gari Zabaleta. Introducción a la Data Science y al Machine Learning 2021-2022.
+
+## Getting Started
+
+### Dependencies
+**Conda
+
 ### 1. Run locally
 
 **1.1 Download the Dataset using the kaggle API**
