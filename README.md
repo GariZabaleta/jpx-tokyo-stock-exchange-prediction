@@ -6,25 +6,32 @@
 
 To install the Kaggle API:
 
-*pip install kaggle*
+```
+pip install kaggle
+```
 
 More about the Kaggle API in https://github.com/Kaggle/kaggle-api.
 
 **1.2 Command to download the dataset to your local machine**
 
-*mkdir CapstoneProject*
+```
+mkdir CapstoneProject
+cd CapstoneProject
 
-*cd CapstoneProject*
-
-*kaggle competitions download -c jpx-tokyo-stock-exchange-prediction*
+kaggle competitions download -c jpx-tokyo-stock-exchange-prediction
+```
 
 **1.3 Clone this repository**
 
-*git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.git*
+```
+git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.git
+```
 
 **1.3 Install Requirements**
 
-*pip install -r requirements.txt*
+```
+pip install -r requirements.txt
+```
 
 **1.4 Idea! prepare 2 notebooks, one for Local, one for Kaggle**
 
@@ -34,7 +41,15 @@ More about the Kaggle API in https://github.com/Kaggle/kaggle-api.
 
 **2.1 Clone this repository**
 
-*git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.git*
+```
+git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.git
+```
 
 https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository
 
+
+## Authors
+
+Garikoitz Zabaleta
+
+garikoitz.zabaleta@gmail.com
