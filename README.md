@@ -4,7 +4,7 @@
 
 **1.1 Download the Dataset using the kaggle API**
 
-To install the Kaggle API:
+Install the Kaggle API
 
 ```
 pip install kaggle
@@ -12,13 +12,14 @@ pip install kaggle
 
 More about the Kaggle API in https://github.com/Kaggle/kaggle-api.
 
-**1.2 Command to download the dataset to your local machine**
+**1.2 Download the dataset to your local machine**
 
 ```
 mkdir CapstoneProject
 cd CapstoneProject
 
 kaggle competitions download -c jpx-tokyo-stock-exchange-prediction
+cd jpx-tokyo-stock-exchange-prediction
 ```
 
 **1.3 Clone this repository**
@@ -51,6 +52,7 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/dupli
 ## Authors
 
 Gari Zabaleta
-[garikoitz.zabaleta@gmail.com]
 
-Linkedin: https://www.linkedin.com/in/garizabaleta/
+Email: [garikoitz.zabaleta@gmail.com](garikoitz.zabaleta@gmail.com)
+
+Linkedin: [https://www.linkedin.com/in/garizabaleta/](https://www.linkedin.com/in/garizabaleta/)
