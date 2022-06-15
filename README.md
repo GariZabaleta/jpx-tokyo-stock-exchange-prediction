@@ -50,6 +50,7 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/dupli
 
 ## Authors
 
-Garikoitz Zabaleta
+Gari Zabaleta
+[garikoitz.zabaleta@gmail.com]
 
-garikoitz.zabaleta@gmail.com
+Linkedin: https://www.linkedin.com/in/garizabaleta/
