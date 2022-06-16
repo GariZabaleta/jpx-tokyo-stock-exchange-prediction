@@ -7,8 +7,9 @@ Capstone project Gari Zabaleta. Introducción a la Data Science y al Machine Lea
 
 ## Getting Started
 
-### Dependencies
-**Conda
+### Enviroment
+
+Anaconda for Python 3.8. To install [Anaconda](https://www.anaconda.com/products/distribution)
 
 ### 1. Run locally
 
@@ -44,8 +45,14 @@ git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.gi
 pip install -r requirements.txt
 ```
 
-**1.4 Idea! prepare 2 notebooks, one for Local, one for Kaggle**
+**1.4 Run the jupyter notebook**
 
+Open the Anaconda Prompt
+
+'''
+cd CapstoneProject/jpx-tokyo-stock-exchange-prediction
+jupyter notebook
+'''
 
 ### 2. Run in Kaggle
 
@@ -66,3 +73,8 @@ Gari Zabaleta
 Email: [garikoitz.zabaleta@gmail.com](garikoitz.zabaleta@gmail.com)
 
 Linkedin: [https://www.linkedin.com/in/garizabaleta/](https://www.linkedin.com/in/garizabaleta/)
+
+
+## Agurrak
+
+Eta azkenik, eta gehienbat nire Gurasoeri. Zuri ere Izaro, eduki duzun pazientziarengatik. Mil esker!
