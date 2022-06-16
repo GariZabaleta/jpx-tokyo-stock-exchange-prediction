@@ -1,9 +1,9 @@
 ## JPX Tokyo Stock Exchange Prediction Challenge
 
-[jpx-tokyo-stock-exchange challenge](https://www.kaggle.com/competitions/jpx-tokyo-stock-exchange-prediction)
+Based on [jpx-tokyo-stock-exchange challenge](https://www.kaggle.com/competitions/jpx-tokyo-stock-exchange-prediction)
 
 ## Description
-Capstone project Gari Zabaleta. Introducción a la Data Science y al Machine Learning 2021-2022.
+Capstone project by Gari Zabaleta for *Introducción a la Data Science y al Machine Learning 2021-2022* Postgraduate.
 
 ## Getting Started
 
@@ -49,10 +49,10 @@ pip install -r requirements.txt
 
 Open the Anaconda Prompt
 
-'''
+```
 cd CapstoneProject/jpx-tokyo-stock-exchange-prediction
 jupyter notebook
-'''
+```
 
 ### 2. Run in Kaggle
 
@@ -65,6 +65,18 @@ git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.gi
 
 https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository
 
+## HELP
+
+* To speed up the optimization process with Optuna activate when available the GPU option by uncommenting the following  parameters in the *objective* function
+
+```
+def objective(trial):
+    params = {
+       # 'device': 'gpu',
+       # 'gpu_platform_id': 0,
+       # 'gpu_device_id': 0,
+        }
+```
 
 ## Authors
 
