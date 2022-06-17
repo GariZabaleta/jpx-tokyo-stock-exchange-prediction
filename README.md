@@ -78,7 +78,7 @@ git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.gi
 * Click Add data
 * Go to Competition data and select JPX Tokyo Stock Exchange Prediction and click on *Add*
 * In the Notebook go to *File* and click *Import Notebook*. 
-* Select jpx-prediction.ipynb
+* Select j*px-prediction.ipynb* file from your local machine
 
 
 ## HELP
