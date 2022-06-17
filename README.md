@@ -23,7 +23,15 @@ pip install kaggle
 
 More about the Kaggle API in https://github.com/Kaggle/kaggle-api.
 
-**1.2 Download the dataset to your local machine**
+**1.2 Download API Token**
+
+Go to Kaggle account settings and download the *kaggle.json* file to the following folder (Windows)
+```
+C:\Users\<USER>\.kaggle
+```
+
+
+**1.3 Download the dataset to your local machine**
 
 ```
 mkdir CapstoneProject
@@ -33,19 +41,19 @@ kaggle competitions download -c jpx-tokyo-stock-exchange-prediction
 cd jpx-tokyo-stock-exchange-prediction
 ```
 
-**1.3 Clone this repository**
+**1.4 Clone this repository**
 
 ```
 git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.git
 ```
 
-**1.3 Install Requirements**
+**1.5 Install Requirements**
 
 ```
 pip install -r requirements.txt
 ```
 
-**1.4 Run the jupyter notebook**
+**1.6 Run the jupyter notebook**
 
 Open the Anaconda Prompt
 
@@ -63,7 +71,15 @@ jupyter notebook
 git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.git
 ```
 
-https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository
+**2.2 Go to Kaggle website**
+
+* [Kaggle](https://www.kaggle.com/)
+* Create a new Notebook
+* Click Add data
+* Go to Competition data and select JPX Tokyo Stock Exchange Prediction and click on *Add*
+* In the Notebook go to *File* and click *Import Notebook*. 
+* Select jpx-prediction.ipynb
+
 
 ## HELP
 
