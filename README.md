@@ -62,6 +62,62 @@ cd CapstoneProject/jpx-tokyo-stock-exchange-prediction
 jupyter notebook
 ```
 
+**1.7 Select local file path**
+
+Uncomment local data path in the following cells
+
+*Local Datasets*
+```
+%%time
+financials_df = pd.read_csv("train_files/financials.csv")
+options_df = pd.read_csv("train_files/options.csv")
+secondary_stock_prices_df = pd.read_csv("train_files/secondary_stock_prices.csv")
+stock_prices_df = pd.read_csv("train_files/stock_prices.csv")
+trades_df = pd.read_csv("train_files/trades.csv")
+stocks_df = pd.read_csv("stock_list.csv")
+```
+and 
+
+*Local Suplemental files*
+
+
+```
+%%time
+financials_info = pd.read_csv("/data_specifications/stock_fin_spec.csv")
+options_info = pd.read_csv("/data_specifications/options_spec.csv")
+stock_prices_info = pd.read_csv("/data_specifications/stock_price_spec.csv")
+trades_info = pd.read_csv("/data_specifications/trades_spec.csv")
+stocks_info = pd.read_csv("/data_specifications/stock_list_spec.csv")
+```
+
+Comment Kaggle data path in the following cells
+
+*Datasets*
+
+```
+"""
+%%time 
+financials_df = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/train_files/financials.csv")
+options_df = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/train_files/options.csv")
+secondary_stock_prices_df = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/train_files/secondary_stock_prices.csv")
+stock_prices_df = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/train_files/stock_prices.csv")
+trades_df = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/train_files/trades.csv")
+stocks_df = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/stock_list.csv")
+"""
+```
+
+*Suplemental files*
+
+```
+"""
+financials_info = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/data_specifications/stock_fin_spec.csv")
+options_info = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/data_specifications/options_spec.csv")
+stock_prices_info = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/data_specifications/stock_price_spec.csv")
+trades_info = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/data_specifications/trades_spec.csv")
+stocks_info = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/data_specifications/stock_list_spec.csv")
+"""
+```
+
 ### 2. Run in Kaggle
 
 
@@ -78,7 +134,7 @@ git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.gi
 * Click Add data
 * Go to Competition data and select JPX Tokyo Stock Exchange Prediction and click on *Add*
 * In the Notebook go to *File* and click *Import Notebook*. 
-* Select j*px-prediction.ipynb* file from your local machine
+* Upload j*px-prediction.ipynb* file from your local machine
 
 
 ## HELP
