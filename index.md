@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Jpx-tokyo-stock-exchange-prediction
 
 You can use the [editor on GitHub](https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
