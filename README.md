@@ -52,6 +52,7 @@ git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.gi
 Open Anaconda terminal and install required packages
 
 ```
+conda install -c plotly plotly
 conda install -c conda-forge xgboost
 conda install -c conda-forge lightgbm
 conda install -c conda-forge optuna
