@@ -49,8 +49,12 @@ git clone https://github.com/GariZabaleta/jpx-tokyo-stock-exchange-prediction.gi
 
 **1.5 Install Requirements**
 
+Open Anaconda terminal and install required packages
+
 ```
-pip install -r requirements.txt
+conda install -c conda-forge xgboost
+conda install -c conda-forge lightgbm
+conda install -c conda-forge optuna
 ```
 
 **1.6 Run the jupyter notebook**
