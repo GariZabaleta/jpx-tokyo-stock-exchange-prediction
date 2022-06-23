@@ -5216,4 +5216,5 @@ for (prices, options, financials, trades, secondary_prices, sample_prediction) i
 * More time efficient Models are prefered when having a tight deadline. Trade-off between accuracy and time (election of LGBMLight over XGBoost)
 * Kaggle competitions are a great place to practice ML knowledge!
 * Competition public boards show insane Sharpe ratios, top 50 got a Sharpe ratio >3. From 1 to 1.99 is considered adequate/good, from 2 to 2.99 is considered very good, and greater than 3 is considered excellent. I suspect competitors tend to overfit their models.
+* In order to get a better Sharpe score, maybe it would have been more efficient to try to minimize the stardard deviation of all Sharpe ratios calculated for the time crossvalidation instead of maximizing the mean Sharpe ratio
 
