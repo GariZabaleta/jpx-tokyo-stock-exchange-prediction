@@ -5005,7 +5005,7 @@ optuna.visualization.plot_optimization_history(opt)
 
  ![image info](./jpx-prediction_files/Optimization_plot.PNG)
 
-
+**Note**  The best parameters were calculated at trial 7. Since I added the hyperparameter tuning with a timecrossvalidation, the hyperparameter tuning time took extremely long. Sometimes it even provoke a timeout. The average Sharpe ratio did not improve a lot during the hyperparameter tuning. It doesnt seem to be the most effective way of trainning the model. 
 
 ```python
 # Vizualize parameter importance
@@ -5014,7 +5014,7 @@ optuna.visualization.plot_param_importances(opt)
 
  ![image info](./jpx-prediction_files/Hiperparameter_importance.PNG)
 
-**Note** 
+**Note**  Max depth and learning date seems to be the most important Hyperparameters
 
 ## Retrain the model using the best hyperparameters
 
@@ -5030,7 +5030,6 @@ model_o.fit(X1,y)
                   learning_rate=0.049474136211608837, max_depth=7, n_estimators=586,
                   random_seed=0, reg_alpha=0.006847105576684045,
                   reg_lambda=0.004418125737902547, subsample=0.8953495352236904)
-
 
 
 ### 5. API Submission
