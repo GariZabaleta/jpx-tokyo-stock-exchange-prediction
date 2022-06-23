@@ -3911,6 +3911,7 @@ display(df_9726.tail(5))
 
 
 **One Hot encoding Stock Catagorical data**
+Convert categorial data into numerical data to use in the ML model.
 - SectorCode33
 - Section
 
@@ -4631,8 +4632,10 @@ sns.heatmap(corr_mat,square = True, ax = ax)
 ```
 
 
-![image info](./jpx-prediction_files/correlation_matrix.png)
+![image info](./jpx-prediction_files/Correlation_matrix.png)
 
+
+**Note** Target variable (our label variable in the ML model) seems to be most correlated with Price changes. The rest of variables does not seem to provide that much information about the stock performance.
 
 **Removing special characters in the column names**
 
