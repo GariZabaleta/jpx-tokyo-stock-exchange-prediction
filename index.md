@@ -4610,6 +4610,7 @@ train_set_cat_coded_ready
 
 
 **Selecting features for the model**
+Once all the features are calculated and the categorical variables are encoded, create all the data for the ML model is ready.
 
 
 ```python
@@ -4637,12 +4638,6 @@ sns.heatmap(corr_mat,square = True, ax = ax)
 
 **Note** Target variable (our label variable in the ML model) seems to be most correlated with Price changes. The rest of variables does not seem to provide that much information about the stock performance.
 
-**Removing special characters in the column names**
-
-
-```python
-X = X.rename(columns = lambda x:re.sub('[^A-Za-z0-9_]+', '', x))
-```
 
 **Drop labels**
 
@@ -4652,9 +4647,7 @@ y= X["Target"].to_numpy()
 X=X.drop(["Target"],axis=1)
 ```
 
-### Standarize Values
-
-A data pipeline was originally created to standarize the input attribute for the model. After several tries, it was concluded that the model works better without standarized values.
+**Note** A data pipeline was originally created to standarize the input all numerical attribute for the model. After several tries, it was concluded that the model works better without standarized values. Here the original code
 
 
 ```python
@@ -4677,15 +4670,15 @@ full_pipeline = ColumnTransformer([
 
 Calculate the average Sharpe ratio for the following ML models.
 
-- LGBMRegressor
+- **LGBMRegressor**
 
 ![image info](./jpx-prediction_files/Lightgbm.PNG)
 
-- XGBoost Regressor
+- **XGBoost Regressor**
 
 ![image info](./jpx-prediction_files/XGBoost.PNG)
 
-- Random Forest Regressor
+- **Random Forest Regressor**
   
 ![image info](./jpx-prediction_files/RandomForest.PNG)
 
