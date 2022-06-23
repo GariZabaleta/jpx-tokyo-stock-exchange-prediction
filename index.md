@@ -1443,7 +1443,7 @@ df_prices =  merge_metadata(stock_prices_df, stocks2000_df)
 
 
 **Calculating Target variable statistics**
-
+Total Target mean value
 
 ```python
 mean_securities_df = df_prices.groupby(["SecuritiesCode"])["Target"].mean()
@@ -1461,7 +1461,7 @@ total_mean_securities
 ![image info](./jpx-prediction_files/Target_securities_histo.png)
 
 
-
+**Note** Kurtosis >>> 3, it means that the tails of the distribution are way bigger than the normal distribution. In this case a higher Kurtosis will mean higher volatity in the stock performances (some stocks will perform much better than others), which will impact negatively in the Sharpe value.
 
 
 ```python
@@ -1479,6 +1479,8 @@ total_mean_date
 
 ![image info](./jpx-prediction_files/Target_dates_histo.png)
 
+
+**Note**  A Kurtosis bigger than 3 will mean that there will be volatity in the same stock performance for different dates.
 
 
 ## Grupying the Target by Sector and Section
