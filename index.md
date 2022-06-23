@@ -3604,7 +3604,7 @@ Before adjustment
 
 After adjustment
 
-![image info](./jpx-prediction_files/After_adjustment.PNG)
+![image info](./jpx-prediction_files/after_adjustment.PNG)
 
 ## 3. Feature Engineering
 
