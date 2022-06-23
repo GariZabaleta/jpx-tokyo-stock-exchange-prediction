@@ -4,13 +4,14 @@
 
 The competition will involve building portfolios from the stocks eligible for predictions (around 2,000 stocks). Specifically, each participant ranks the stocks from highest to lowest expected returns and is evaluated on the difference in returns between the top and bottom 200 stocks. The participants have access to financial data from the Japanese market, such as stock information and historical stock prices to train and test your model.
 
-The competitor with the highest Sharpe Ratio will result the winner of the challenge. In the competition the Sharpe Ratio is calculated as follows:
+The competitor with the highest Sharpe Ratio will result the winner of the challenge. To do thate Target of the closing price (Close) between the next day and the 2 days later for each stock on each date must be predicted. Once the t+1 and t+2 Targets for each stock are predicted, the Sharpe Ratio is calculated as follows:
 
 
 ![image info](./jpx-prediction_files/Competition_Sharpe.PNG)
 
 
-The Sharpe ratio was developed by Nobel laureate William F. Sharpe and is used to help investors understand the return of an investment compared to its risk
+The Sharpe ratio was developed by Nobel laureate William F. Sharpe and is used to help investors understand the return of an investment compared to its risk. More info about this value [Sharp ratio](https://www.investopedia.com/terms/s/sharperatio.asp).
+
 
 ## Libraries
 
@@ -5016,7 +5017,7 @@ optuna.visualization.plot_param_importances(opt)
 
 **Note**  Max depth and learning date seems to be the most important Hyperparameters
 
-## Retrain the model using the best hyperparameters
+**Retrain the model using the best hyperparameters**
 
 ```python
 X1 = X.drop(['Date','SecuritiesCode'], axis=1, inplace=False)
@@ -5034,6 +5035,7 @@ model_o.fit(X1,y)
 
 ### 5. API Submission
 
+Use the competition API to calculate the public leaderboard score. Once the competition is finished, this hidden test data will be replace by test data that will be used to calculate the final private score.
 
 ```python
 import jpx_tokyo_market_prediction
