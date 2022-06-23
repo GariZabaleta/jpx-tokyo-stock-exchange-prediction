@@ -5204,9 +5204,16 @@ for (prices, options, financials, trades, secondary_prices, sample_prediction) i
     
 **Sharpe day score**
 
-0.148 Sharpe score in Kaggle competition. Public Leaderboard position as per 2022.06.23 was 1321/1811 
+0.148 Sharpe score in Kaggle competition. Public Leaderboard position as per 2022.06.23 was 1321/1811. A Sharpe ratio less than 1 is considered bad.
+
 
 
 ## Conclusion
 
+* Predicting the stock prices using just the technical analysis (predict future stock prices using past stock prices) is a extremely complicated tasks. For a more accurate prediction, fundamental analysis must be included (use financial info)
+* For a proper Feature engineering domain knowledge is fundamental 
+* Because of the large size of the datasize memory management was needed (Kaggle notebook crashed several times)
+* More time efficient Models are prefered when having a tight deadline. Trade-off between accuracy and time (election of LGBMLight over XGBoost)
+* Kaggle competitions are a great place to practice ML knowledge!
+* Competition public boards show insane Sharpe ratios, top 50 got a Sharpe ratio >3. From 1 to 1.99 is considered adequate/good, from 2 to 2.99 is considered very good, and greater than 3 is considered excellent. I suspect competitors tend to overfit their models.
 
