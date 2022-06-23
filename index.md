@@ -1513,7 +1513,7 @@ ax.tick_params(axis='x', rotation=90)
 ![image info](./jpx-prediction_files/target_mean_sector.png)
 
     
-
+**Note** It seems like stocks belonging to the different Sector present a different performance. Therefore the Sector info will be added to the model
 
 ### Target vs Section
 
@@ -1544,6 +1544,7 @@ ax.tick_params(axis='x', rotation=90)
 ![image info](./jpx-prediction_files/target_mean_section.png)
 
     
+**Note** It seems like stocks belonging to the different Section present a different performance. Therefore the Sector info will be added to the model
 
 
 ### Secondary stock prices
