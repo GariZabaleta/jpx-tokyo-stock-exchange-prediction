@@ -4702,8 +4702,17 @@ full_pipeline = ColumnTransformer([
 Calculate the average Sharpe ratio for the following ML models.
 
 - LGBMRegressor
+
+![image info](./jpx-prediction_files/Lightgbm.PNG)
+
 - XGBoost Regressor
+
+![image info](./jpx-prediction_files/XGBoost.PNG)
+
 - Random Forest Regressor
+  
+![image info](./jpx-prediction_files/RandomForest.PNG)
+
 
 The model giving the **highest** Sharpe ratio will be selected for the final model.
 
@@ -5225,4 +5234,5 @@ for (prices, options, financials, trades, secondary_prices, sample_prediction) i
 
     
 **Sharpe day score**
+
 0.148 Sharpe score in Kaggle competition. Public Leaderboard position as per 2022.06.23 was 1321/1811 
