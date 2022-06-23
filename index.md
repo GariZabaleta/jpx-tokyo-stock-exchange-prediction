@@ -96,7 +96,7 @@ trades_info = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/dat
 stocks_info = pd.read_csv("/kaggle/input/jpx-tokyo-stock-exchange-prediction/data_specifications/stock_list_spec.csv")
 ```
 
-## 1. Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 ### Stock prices
 
@@ -1165,7 +1165,7 @@ section2000
 
 
 
-## Merging Stock metadate with stock price
+### Merging Stock metadate with stock price
 
 
 ```python
@@ -1380,9 +1380,9 @@ total_mean_date
 **Note**  A Kurtosis bigger than 3 will mean that there will be volatity in the same stock performance for different dates.
 
 
-## Grupying the Target by Sector and Section
+### Grupying the Target by Sector and Section
 
-### Target vs Sector33
+#### Target vs Sector33
 
 
 ```python
@@ -1412,7 +1412,7 @@ ax.tick_params(axis='x', rotation=90)
     
 **Note** It seems like stocks belonging to the different Sector present a different performance. Therefore the Sector info will be added to the model
 
-### Target vs Section
+#### Target vs Section
 
 
 ```python
@@ -1734,7 +1734,7 @@ As happened with the primary stock list 2020-10-01 is the day with the most amou
 
 **NOTE:** Secondary stock prices price movement is correlated with the main stock price movement. Due to the limited amount dedicated to this project, this data will not be included in the prediction model
 
-## Trades
+### Trades
 
 trades.csv
 
@@ -3153,7 +3153,7 @@ options_df.info()
 
 
 
-## 2. Data wrangling
+## Data wrangling
 - Adjust OHLC prices (Split- Reverse/split)
 - Imput missing values
 
@@ -3385,7 +3385,7 @@ After adjustment
 
 ![image info](./jpx-prediction_files/after_adjustment.PNG)
 
-## 3. Feature Engineering
+## Feature Engineering
 
 
 **Correlogram to see if there is any autocorrelation**
