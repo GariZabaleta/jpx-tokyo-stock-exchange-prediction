@@ -59,31 +59,6 @@ from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import mean_squared_error,mean_absolute_error
 ```
 
-
-<style type='text/css'>
-.datatable table.frame { margin-bottom: 0; }
-.datatable table.frame thead { border-bottom: none; }
-.datatable table.frame tr.coltypes td {  color: #FFFFFF;  line-height: 6px;  padding: 0 0.5em;}
-.datatable .bool    { background: #DDDD99; }
-.datatable .object  { background: #565656; }
-.datatable .int     { background: #5D9E5D; }
-.datatable .float   { background: #4040CC; }
-.datatable .str     { background: #CC4040; }
-.datatable .time    { background: #40CC40; }
-.datatable .row_index {  background: var(--jp-border-color3);  border-right: 1px solid var(--jp-border-color0);  color: var(--jp-ui-font-color3);  font-size: 9px;}
-.datatable .frame tbody td { text-align: left; }
-.datatable .frame tr.coltypes .row_index {  background: var(--jp-border-color0);}
-.datatable th:nth-child(2) { padding-left: 12px; }
-.datatable .hellipsis {  color: var(--jp-cell-editor-border-color);}
-.datatable .vellipsis {  background: var(--jp-layout-color0);  color: var(--jp-cell-editor-border-color);}
-.datatable .na {  color: var(--jp-cell-editor-border-color);  font-size: 80%;}
-.datatable .sp {  opacity: 0.25;}
-.datatable .footer { font-size: 9px; }
-.datatable .frame_dimensions {  background: var(--jp-border-color3);  border-top: 1px solid var(--jp-border-color0);  color: var(--jp-ui-font-color3);  display: inline-block;  opacity: 0.6;  padding: 1px 10px 1px 5px;}
-</style>
-
-
-
 **Optimization libraries**
 
 
@@ -1026,7 +1001,7 @@ stocks_df["Universe0"].value_counts()
     Name: Universe0, dtype: int64
 
 
-
+The values marked as True are the biggest 2000 Stocks in Japan. The stock ranking must be done using those products.
 
 
 
@@ -1486,12 +1461,6 @@ total_mean_securities
 ![image info](./jpx-prediction_files/Target_securities_histo.png)
 
 
-
-
-
-    
-![png](jpx-prediction_files/jpx-prediction_89_0.png)
-    
 
 
 
@@ -5236,3 +5205,8 @@ for (prices, options, financials, trades, secondary_prices, sample_prediction) i
 **Sharpe day score**
 
 0.148 Sharpe score in Kaggle competition. Public Leaderboard position as per 2022.06.23 was 1321/1811 
+
+
+## Conclusion
+
+
