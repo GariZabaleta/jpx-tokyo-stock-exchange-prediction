@@ -4694,7 +4694,7 @@ model_performance = []
 
 ### Time based Crossvalidation
 
-![image info](./jpx-prediction_files/timeseries.png)
+![image info](./jpx-prediction_files/timeseries.PNG)
 
 
 
