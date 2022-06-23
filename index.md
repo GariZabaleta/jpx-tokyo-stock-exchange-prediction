@@ -10,7 +10,7 @@ The competitor with the highest Sharpe Ratio will result the winner of the chall
 ![image info](./jpx-prediction_files/Competition_Sharpe.PNG)
 
 
-The Sharpe ratio was developed by Nobel laureate William F. Sharpe and is used to help investors understand the return of an investment compared to its risk. More info about this value [Sharp ratio](https://www.investopedia.com/terms/s/sharperatio.asp).
+The Sharpe ratio was developed by Nobel laureate William F. Sharpe and is used to help investors understand the return of an investment compared to its risk. More info about this value [Sharpe ratio](https://www.investopedia.com/terms/s/sharperatio.asp).
 
 
 ## Libraries
