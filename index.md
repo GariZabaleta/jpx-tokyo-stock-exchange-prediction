@@ -4672,13 +4672,19 @@ Calculate the average Sharpe ratio for the following ML models.
 
 - **LGBMRegressor**
 
+State of the art algorithm used in several kaggle competition winner notebooks. It is a high-performance gradient boosting framework based on decision tree algorithm, used for ranking, classification and many other machine learning tasks. Since it is based on decision tree algorithms, it splits the tree leaf wise with the best fit whereas other boosting algorithms split the tree depth wise or level wise rather than leaf-wise. That makes it way faster than other boosting algorithms.
+
 ![image info](./jpx-prediction_files/Lightgbm.PNG)
 
 - **XGBoost Regressor**
 
+State of the art algorithm used in several kaggle competition winner notebooks. It also uses a decision tree algorithms but tree deep wise. A priori it is supposed to be more accurate the LGBMLight algorithm.
+
 ![image info](./jpx-prediction_files/XGBoost.PNG)
 
 - **Random Forest Regressor**
+
+Well-known ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. It is included in the scikit-learn package.
   
 ![image info](./jpx-prediction_files/RandomForest.PNG)
 
@@ -4694,6 +4700,7 @@ model_performance = []
 
 ### Time based Crossvalidation
 
+For model validation TimeSeriesSplit method will be used. This garantees crossvalidation without any data leakge (when test data is included for model trainning). This is also specially garanteed by adding a time gap between train and test datasets. This method is included in scikit-learn.
 ![image info](./jpx-prediction_files/timeseries.PNG)
 
 
@@ -4766,6 +4773,7 @@ print("\nAverage cross-validation Sharpe Ratio: {:.4f}, standard deviation = {:.
 
  ![image info](./jpx-prediction_files/LGBMlight_features.PNG)
 
+**Note** As seen in the correlation matrix, the price difference in % seems to be the most important feature in target attribute prediction.
 
 ```python
 model_performance.append({"model":"LGBMRegressor","Mean Sharpe Ratio":np.mean(sharpe_ratio),"SD Sharpe Ratio":np.std(sharpe_ratio)})
@@ -4835,6 +4843,8 @@ print("\nAverage cross-validation Sharpe Ratio: {:.4f}, standard deviation = {:.
 ```
 
  ![image info](./jpx-prediction_files/XGBoost_features.PNG)
+
+**Note** As seen in the correlation matrix, the price difference in % seems to be the most important feature in target attribute prediction. It seems like XGBoost relies too heavily on just one attribute (*pct5*).
 
 ```python
 model_performance.append({"model":"XGBRegressor","Mean Sharpe Ratio":np.mean(sharpe_ratio),"SD Sharpe Ratio":np.std(sharpe_ratio)})
@@ -5004,7 +5014,9 @@ optuna.visualization.plot_param_importances(opt)
 
  ![image info](./jpx-prediction_files/Hiperparameter_importance.PNG)
 
+**Note** 
 
+## Retrain the model using the best hyperparameters
 
 ```python
 X1 = X.drop(['Date','SecuritiesCode'], axis=1, inplace=False)
