@@ -3358,15 +3358,17 @@ options_df.info()
 
 **NOTE:** Info provided by Options (for instance the put/call volumen ratio) is interesting to determine the market feeling about a particular derivated product. Due to the limited amount dedicated to this project, this data will not be included in the prediction model
 
+
+
 ## 2. Data wrangling
 - Adjust OHLC prices (Split- Reverse/split)
-- Input missing values
+- Imput missing values
 
 
 #### Generate adjusted OHLC prices
 Generate adjusted OHLC prices using AdjustmentFactor attribute. This should reduce historical price gap caused by split/reverse-split.
 
-Furthermore, adjust_price() also inputs the missing data
+Furthermore, adjust_price() also imputs the missing data using a linear backpropagation method.
 
 
 ```python
@@ -3610,20 +3612,19 @@ After adjustment
 
 
 Correlogram adjusted Close price
+
 ![image info](./jpx-prediction_files/Autocorrelation_price.png)
 
     
 
 
 Correlogram Target
+
 ![image info](./jpx-prediction_files/Autocorrelation_target.png)
 
-    
-
-    
 
 
-It certainly look like we are dealing with a random walk, as there are no indications of any autocorrelation for any lag.
+It certainly looks like we are dealing with a random walk, as there are no indications of any autocorrelation for any lag.
 
 Basically our LSTM found nothing of any real value to model and thus took the average value, along with a slight slope; we would have been just as well off with an extremely simplistic model of the form
 
@@ -3659,7 +3660,7 @@ Close Price shows autocorrelation but stock return not. Therefore, the target va
 
 **Price changes**
 
-
+Price change in percentage for different rolling days.
 
 ```python
 period = [5,10,21,33]
@@ -3877,7 +3878,7 @@ display(df_9726.head(5))
 
 
 **Simple Moving Average (SMA)**
-
+A simple moving average (SMA) is an arithmetic moving average calculated by adding recent prices and then dividing that figure by the number of time periods in the calculation average
 
 ```python
 period_avg = [10,20,50,60]
@@ -3895,7 +3896,7 @@ display(df_9726.tail(5))
 
 
 **Exponential Moving Average (EMA)**
-
+An exponential moving average (EMA) is a type of moving average (MA) that places a greater weight and significance on the most recent data points. Compared to SMA, EMA show more sensitivity to recent price changes.
 
 ```python
 for i in period_avg:
