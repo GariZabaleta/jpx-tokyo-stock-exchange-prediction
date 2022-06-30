@@ -4850,7 +4850,6 @@ for (prices, options, financials, trades, secondary_prices, sample_prediction) i
 **Prediction 2021-12-06**
 
 <div>
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
